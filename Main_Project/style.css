@@ -102,6 +102,22 @@
     font-weight: 500;
   }
   
+ /* HEADER */
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* About us page */
+.bolder-txt {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+
+
   
   
   
