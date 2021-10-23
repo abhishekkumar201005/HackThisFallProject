@@ -13,7 +13,7 @@
     font-weight: 400;
     color: #444;
     line-height: 1;
-    background-color: #f3f3f3;
+    background-color: #ffffff;
   } 
   /**************************/
 /* HEADER */
@@ -23,10 +23,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#f3f3f3;
+  background-color:#ffffff;
 
   /* Because we want header to be sticky later */
-  height: 9.6rem;
+  height: 9.2rem;
   padding: 0 4.8rem;
   position: relative;
 }
@@ -44,13 +44,14 @@
   display: flex;
   align-items: center;
   gap: 3.2rem;
+  
 }
 
 .main-nav-link:link,
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #333;
+  color:#848484;
   font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.3s;
@@ -58,7 +59,7 @@
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #cf711f;
+  color:#429441;
 }
 
 .main-nav-link.nav-cta:link,
@@ -66,49 +67,93 @@
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
-  background-color: #e67e22;
+  background-color: #429441;
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: #cf711f;
+  background-color: #429441;
 }
 
-/* Main component */
-.main_component {
-  width: 960px;
-  margin: 0 auto;
-}
-.main_container{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 80px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.header-text-box {
-  align-self: center;
-}
-
+/**************************/
+/* HERO SECTION */
+/**************************/
 h1 {
+  margin-left: 10px;
+  margin-top: 20px;
   margin-bottom: 32px;
-  font-size: 44px;
+  font-size: 42px;
   line-height: 1.1;
   letter-spacing: -1px;
-
 }
-
-.header-text {
-  margin-bottom: 24px;
-  font-size: 18px;
-  line-height: 1.7;
-}
-
 img {
   width: 100%;
   border-radius: 2%;
 }
-/* Slider */
+.section-hero {
+  background-color:#f1f0ec;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+.hero-text-box h1{
+  color:#58a057;
+}
+/**************************/
+/* Facts SECTION */
+/**************************/
+
+.section-facts {
+  padding: 9.6rem 0;
+}
+.container_facts{
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.facts_center-text{
+  text-align: center;
+}
+.facts_subheading{
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+.facts_heading-secondary{
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+/**************************/
+/* slider SECTION */
+/**************************/
 .slider_container {
   display: flex;
   width: 90vw;
@@ -124,7 +169,7 @@ img {
   flex: 0.5;
   margin: 10px;
   position: relative;
-  -webkit-transition: all 700ms ease-in;
+  -webkit-transition: all 600ms ease-in;
 }
 .panel h3 {
   font-size: 24px;
@@ -133,6 +178,7 @@ img {
   left: 20px;
   margin: 0;
   opacity: 0;
+  color:black;
 }
 
 .panel.active {
@@ -148,4 +194,42 @@ img {
   font-size: 45px;
   font-weight: 800;
   color: #f5a30b;
+}
+
+/**************************/
+/* Quiz  SECTION */
+/**************************/
+.section-quiz{
+  padding: 9.6rem 0;
+}
+.quiz_container{
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+
+}
+.quiz_subheading{
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+.quiz_heading-secondary{
+  font-weight: 800;
+  color: #333;
+  letter-spacing: -0.5px;
+  font-size: 4rem;
+  line-height: 1.5;
+  margin-bottom: 9.6rem;
+}
+.quiz_heading-tertiary{
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
 }
