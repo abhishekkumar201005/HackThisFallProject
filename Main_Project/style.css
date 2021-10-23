@@ -1,100 +1,113 @@
-/* The page is NOT responsive. You can implement responsiveness yourself if you wanna have some fun 😃 */
-
-:root {
-    --color-primary: #5ec576;
-    --color-secondary: #ffcb03;
-    --color-tertiary: #ff585f;
-    --color-primary-darker: #4bbb7d;
-    --color-secondary-darker: #ffbb00;
-    --color-tertiary-darker: #fd424b;
-    --color-primary-opacity: #5ec5763a;
-    --color-secondary-opacity: #ffcd0331;
-    --color-tertiary-opacity: #ff58602d;
-    --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
-    --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
-  }
-  
-  * {
+* {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing:border-box;
   }
   
   html {
     font-size: 62.5%;
-    box-sizing: border-box;
   }
   
   body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    color: #444;
-    line-height: 1.9;
-    background-color: #f3f3f3;
-  }
-  
-  /* NAVIGATION */
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 9rem;
-    width: 100%;
-    padding: 0 6rem;
-    z-index: 100;
-  }
-  
-  /* nav and stickly class at the same time */
-  .nav.sticky {
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.95);
-  }
-  
-  .nav__logo {
-    height: 4.5rem;
-    transition: all 0.3s;
-  }
-  
-  .nav__links {
-    display: flex;
-    align-items: center;
-    list-style: none;
-  }
-  
-  .nav__item {
-    margin-left: 4rem;
-  }
-  
-  .nav__link:link,
-  .nav__link:visited {
-    font-size: 1.7rem;
+    font-family: "Rubik", sans-serif;
     font-weight: 400;
-    color: inherit;
-    text-decoration: none;
-    display: block;
-    transition: all 0.3s;
-  }
-  
-  .nav__link--btn:link,
-  .nav__link--btn:visited {
-    padding: 0.8rem 2.5rem;
-    border-radius: 3rem;
-    background-color: var(--color-primary);
-    color: #222;
-  }
-  
-  .nav__link--btn:hover,
-  .nav__link--btn:active {
-    color: inherit;
-    background-color: var(--color-primary-darker);
-    color: #333;
-  }
-  
-.hero__container{
-    width: 100%;
+    color: #444;
+    line-height: 1;
+    background-color: #f3f3f3;
+  } 
+  /**************************/
+/* HEADER */
+/**************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#f3f3f3;
+
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
 }
 
+.logo {
+  height: 2.5rem;
+}
 
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
+/* Main component */
+.main_component {
+  width: 960px;
+  margin: 0 auto;
+}
+.main_container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.header-text-box {
+  align-self: center;
+}
+
+h1 {
+  margin-bottom: 32px;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+
+}
+
+.header-text {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+img {
+  width: 100%;
+  border-radius: 2%;
+}
 /* Slider */
 .slider_container {
   display: flex;
@@ -104,7 +117,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 50vh;
   border-radius: 50px;
   color: #fff;
   cursor: pointer;
@@ -116,7 +129,7 @@
 .panel h3 {
   font-size: 24px;
   position: absolute;
-  bottom: 20px;
+  top:80px;
   left: 20px;
   margin: 0;
   opacity: 0;
@@ -134,74 +147,5 @@
 .bolder-txt {
   font-size: 45px;
   font-weight: 800;
+  color: #f5a30b;
 }
-
-
-/* Quiz App */
-.quiz_body{
-  /* background-color: #b8c6db;
-  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 100%); */
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50vh;
-  overflow: hidden;
-  margin: 0;
-}
-.quiz-container {
-
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
-  width: 600px;
-  overflow: hidden;
-}
-
-.quiz-header {
-  padding: 4rem;
-}
-
-h2 {
-  padding: 1rem;
-  text-align: center;
-  margin: 0;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul li {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-}
-
-ul li label {
-  cursor: pointer;
-}
-
-button {
-  background-color: #8e44ad;
-  color: #fff;
-  border: none;
-  display: block;
-  width: 100%;
-  cursor: pointer;
-  font-size: 1.1rem;
-  font-family: inherit;
-  padding: 1.3rem;
-}
-
-button:hover {
-  background-color: #732d91;
-}
-
-button:focus {
-  outline: none;
-  background-color: #5e3370;
-}
-  
-  
-  

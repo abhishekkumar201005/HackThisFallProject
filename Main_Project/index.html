@@ -4,7 +4,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -12,121 +11,233 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/510912601c.js"
+      crossorigin="anonymous"
+    ></script>
     <title>food_waste Website</title>
     <script defer src="script.js"></script>
-      <script src="https://kit.fontawesome.com/510912601c.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <!--
-       Nav Bar
-    --> 
-    <header>
-      <nav class="nav">
+    <header class="header">
+      <a href="#">
         <img
+          class="logo"
+          alt="website logo"
           src="https://hackthisfall.tech/_nuxt/img/HTFLogo.f1c7609.svg"
-          alt="Hack the food"
-          class="nav__logo"
-          id="logo"
-          designer="Crackers"
-          data-version-number="3.0"
         />
-        <ul class="nav__links">
-          <li class="nav__item">
-            <a class="nav__link" href="#section--1">ABOUT</a>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#section--1">ABOUT</a></li>
+          <li><a class="main-nav-link" href="#section--2">QUIZ</a></li>
+          <li>
+            <a class="main-nav-link" href="#section--3">NGO</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#section--2">QUIZ</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#section--3">NGO</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#section--3">EVENTS</a>
-          </li>
+          <li><a class="main-nav-link" href="#section-4">EVENTS</a></li>
         </ul>
       </nav>
-      </header>
-      <!--
+    </header>
+    <!--
+       Main Section
+      -->
+    <main>
+      <div class="main_component">
+        <section class="main_container">
+          <div class="header-text-box">
+            <h1>
+              Wasted food isn't just a social or humanitarian concern—it's an
+              environmental one.
+            </h1>
+            <p class="header-text">"Eat smart,Be smart"</p>
+          </div>
+          <img src="./img/img-1.jpg" alt="Photo" />
+        </section>
+      </div>
+    </main>
+    <!--
        Slider Section
     -->
-    <div class="slider_container">
-      <div class="panel active" style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
-        <h3>Explore The World</h3>
+    <!-- <div class="slider_container">
+      <div
+        class="panel active"
+        style="
+          background: linear-gradient(to top left, #28b487, #7dd56f);
+        "
+      >
+        <h3>
+          When we waste food, we also waste all the energy and water it takes to
+          grow, harvest, transport, and package it. And if food goes to the
+          landfill and rots, it produces methane—a greenhouse gas even more
+          potent than carbon dioxide.
+        </h3>
       </div>
-      <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
-        <h3>Wild Forest</h3>
+      <div
+        class="panel"
+        style="
+           background: linear-gradient(to top left, #28b487, #7dd56f);
+        "
+      >
+        <h3>
+          Growing food and getting it to your table takes water, energy, and
+          land, including the forests and grasslands that are home to millions
+          of species. When food is wasted, all of those other resources are also
+          thrown out. In addition, about 10% of all human-caused greenhouse
+          gases contributing to climate change are linked to food waste.
+        </h3>
       </div>
-      <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80')">
-        <h3>Sunny Beach</h3>
+      <div
+        class="panel"
+        style="
+          background: linear-gradient(to top left, #28b487, #7dd56f);
+        "
+      >
+        <h3>
+          While dairy products, chicken and eggs usually take more resources to
+          produce per calorie than staples like wheat or rice, it tends to take
+          more energy—and land and water—to produce beef. Corn, especially
+          compared to animal products, is a relatively energy efficient crop.
+        </h3>
       </div>
-      <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80')">
-        <h3>City on Winter</h3>
+      <div
+        class="panel"
+        style="
+          background: linear-gradient(to top left, #28b487, #7dd56f);
+        "
+      >
+        <h3>
+          As per the Food Waste Index Report 2021, a staggering 50 kg of food is
+          thrown away per person every year in Indian homes. Greenhouse Gases
+          Emission: This excess food waste usually ends up in landfills,
+          creating potent greenhouse gases which have dire environmental
+          implications.
+        </h3>
       </div>
-      <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
-        <h3>Mountains - Clouds</h3>
+      <div
+        class="panel"
+        style="
+           background: linear-gradient(to top left, #28b487, #7dd56f);
+        "
+      >
+        <h3>Nearly 40 percent of the food produced in India is wasted every year due to fragmented food systems and inefficient supply chains — a figure estimated by the Food and Agricultural Organisation (FAO).</h3>
       </div>
-    </div>
+    </div> -->
+    <div class="container mt-5 mb-5">
+      <div class="row">
+           <div class="col-md-12 mt-3 mb-3">
+              <h1 class=" text-center bolder-txt">Facts</h1>
+          </div>
+          <div class="col-md-12 mt-5 mb-5">
+            <div class="slider_container">
+              <div
+                class="panel active"
+                style="
+                  background: linear-gradient(to top left, #28b487, #7dd56f);
+                "
+              >
+                <h3>
+                  When we waste food, we also waste all the energy and water it takes to
+                  grow, harvest, transport, and package it. And if food goes to the
+                  landfill and rots, it produces methane—a greenhouse gas even more
+                  potent than carbon dioxide.
+                </h3>
+              </div>
+              <div
+                class="panel"
+                style="
+                   background: linear-gradient(to top left, #28b487, #7dd56f);
+                "
+              >
+                <h3>
+                  Growing food and getting it to your table takes water, energy, and
+                  land, including the forests and grasslands that are home to millions
+                  of species. When food is wasted, all of those other resources are also
+                  thrown out. In addition, about 10% of all human-caused greenhouse
+                  gases contributing to climate change are linked to food waste.
+                </h3>
+              </div>
+              <div
+                class="panel"
+                style="
+                  background: linear-gradient(to top left, #28b487, #7dd56f);
+                "
+              >
+                <h3>
+                  While dairy products, chicken and eggs usually take more resources to
+                  produce per calorie than staples like wheat or rice, it tends to take
+                  more energy—and land and water—to produce beef. Corn, especially
+                  compared to animal products, is a relatively energy efficient crop.
+                </h3>
+              </div>
+              <div
+                class="panel"
+                style="
+                  background: linear-gradient(to top left, #28b487, #7dd56f);
+                "
+              >
+                <h3>
+                  As per the Food Waste Index Report 2021, a staggering 50 kg of food is
+                  thrown away per person every year in Indian homes. Greenhouse Gases
+                  Emission: This excess food waste usually ends up in landfills,
+                  creating potent greenhouse gases which have dire environmental
+                  implications.
+                </h3>
+              </div>
+              <div
+                class="panel"
+                style="
+                   background: linear-gradient(to top left, #28b487, #7dd56f);
+                "
+              >
+                <h3>Nearly 40 percent of the food produced in India is wasted every year due to fragmented food systems and inefficient supply chains — a figure estimated by the Food and Agricultural Organisation (FAO).</h3>
+              </div>
+            </div>
+            </div>
+            </div>
+            </div>
+    <!-- About Us-->
+    <div class="container mt-5 mb-5">
+      <div class="row">
+           <div class="col-md-12 mt-5 mb-5">
+              <h1 class=" text-center bolder-txt">About us</h1>
+          </div>
+          <div class="col-md-12 mt-5 mb-5">
+              <h5 class="text-muted text-center">
+                  <i class="fas fa-quote-left float-left"></i>
+                  We are envisioned to make the World Hunger Free and Zero Food Waste through innovative solutions and methodologies and also creating a Global Social Impact.
+                  Let's Feed People Not Landfills!
+                  <i class="fas fa-quote-right float-right"></i>
+              </h5>
+          </div>
+          <div class="col-md-12 mt-5 mb-5">
+              <h1 class=" text-center bolder-txt">What we do</h1>
+          </div>
+          <div class="col-md-12 mt-5 mb-5">
+              <h5 class="color-purple mt-4"><i class="fas fa-hand-point-right mr-2 fs-2"></i> Feeding needy and in-distress people by surplus food (both pre-packaged and fresh and cooked food) recovered through standard safety procedures and promote innovation in surplus food recovery and distribution</h5>
+              <h5 class="color-purple mt-4"><i class="fas fa-hand-point-right mr-2 fs-2"></i> To sensitize people about food waste through facilitating standardized food waste auditing methods and to provide alternative solutions for spoiled or wasted food</h5>
+              <h5 class="color-purple mt-4"><i class="fas fa-hand-point-right mr-2 fs-2"></i> Raise awareness about food loss and food waste amongst citizens and bring about behavioural change in them to prevent food waste through guidance and good practices</h5>
+              <h5 class="color-purple mt-4"><i class="fas fa-hand-point-right mr-2 fs-2"></i> Raise awareness amongst food businesses by encouraging them to adopt best practices to reduce food loss and food waste in their supply chain, production and distribution cycle</h5>
+              <h5 class="color-purple mt-4"><i class="fas fa-hand-point-right mr-2 fs-2"></i> Provide policy, regulatory, strategy and programme support for food loss and waste reduction initiatives through coordinated efforts. </h5>
 
-        <!-- About Us-->
-      <div class="container mt-5 mb-5">
-        <div class="row">
-             <div class="col-md-12 mt-5 mb-5">
-                <h1 class=" text-center bolder-txt">About us</h1>
-            </div>
-            <div class="col-md-12 mt-5 mb-5">
-                <h5 class="text-muted text-center">
-                    <i class="fas fa-quote-left float-left"></i>
-                    We are envisioned to make the World Hunger Free and Zero Food Waste through innovative solutions and methodologies and also creating a Global Social Impact.
-                    Let's Feed People Not Landfills!
-                    <i class="fas fa-quote-right float-right"></i>
-                </h5>
-            </div>
-            <div class="col-md-12 mt-5 mb-5">
-                <h1 class=" text-center bolder-txt">What we do</h1>
-            </div>
-            <div class="col-md-12 mt-5 mb-5">
-                <h5 class="color-purple mt-4"><i class="fas fa-hand-point-right mr-2 fs-2"></i> Feeding needy and in-distress people by surplus food (both pre-packaged and fresh and cooked food) recovered through standard safety procedures and promote innovation in surplus food recovery and distribution</h5>
-                <h5 class="color-purple mt-4"><i class="fas fa-hand-point-right mr-2 fs-2"></i> To sensitize people about food waste through facilitating standardized food waste auditing methods and to provide alternative solutions for spoiled or wasted food</h5>
-                <h5 class="color-purple mt-4"><i class="fas fa-hand-point-right mr-2 fs-2"></i> Raise awareness about food loss and food waste amongst citizens and bring about behavioural change in them to prevent food waste through guidance and good practices</h5>
-                <h5 class="color-purple mt-4"><i class="fas fa-hand-point-right mr-2 fs-2"></i> Raise awareness amongst food businesses by encouraging them to adopt best practices to reduce food loss and food waste in their supply chain, production and distribution cycle</h5>
-                <h5 class="color-purple mt-4"><i class="fas fa-hand-point-right mr-2 fs-2"></i> Provide policy, regulatory, strategy and programme support for food loss and waste reduction initiatives through coordinated efforts. </h5>
-
-            </div>
-        </div>
-    </div>
-    <!-- Quiz Page-->
-    <div class="quiz_body">
-      <div class="quiz-container " id="quiz">
-        <div class="quiz-header">
-          <h2 id="question">Question text</h2>
-          <ul>
-            <li>
-              <input type="radio" name="answer" id="a" class="answer">
-              <label for="a" id="a_text">Question</label>
-            </li>
-  
-            <li>
-              <input type="radio" name="answer" id="b" class="answer">
-              <label for="b" id="b_text">Question</label>
-            </li>
-  
-            <li>
-              <input type="radio" name="answer" id="c" class="answer">
-              <label for="c" id="c_text">Question</label>
-            </li>
-  
-            <li>
-              <input type="radio" name="answer" id="d" class="answer">
-              <label for="d" id="d_text">Question</label>
-            </li>
-          </ul>
-        </div>
-        <button id="submit">Submit</button>
+          </div>
       </div>
-    </div>
-   
-
+  </div>
+  
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
