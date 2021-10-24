@@ -285,9 +285,13 @@ img {
     background-color: #ffffff;
 }
 .ngo_links{
+  line-height: 22px;
   font-size: 16px;
+  text-decoration: none;
 }
-
+.ngo_link{
+  text-decoration: none;
+}
 .city{
   margin-bottom: 20px;
 }
@@ -318,15 +322,15 @@ img {
 
 .wcu-card-title {
     color: #323f4b;
-    font-family: "Roboto";
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .wcu-card-description {
     color: #7b8794;
     font-family: "Roboto";
     font-size: 16px;
+    
 }
 /**************************/
 /* Event SECTION */
